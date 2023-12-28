@@ -37,9 +37,9 @@ const HomePage = () => {
   return (
     <>
       <div className="h-screen w-screen bg-gray-800 flex items-center justify-center">
-        <div className="h-96 w-96 flex flex-col items-center justify-center">
-          <h1 className="text-white">
-            Ai Image <span>Generator</span>
+        <div className="h-96 w-96 flex flex-col items-center justify-cente bg-black bg-opacity-30 shadow-5xl rounded-2xl">
+          <h1 className="text-white font-bold text-2xl">
+            Ai Image <span className="text-red-800">Generator</span>
           </h1>
           {IsLoading ? (
             <div>
@@ -49,7 +49,13 @@ const HomePage = () => {
               </p>
             </div>
           ) : (
-            <img src={Image === "/" ? def_img : Image} alt="" />
+            <div className="py-5">
+              <img
+                src={Image === "/" ? def_img : Image}
+                alt=""
+                className="w-52 h-52"
+              />
+            </div>
           )}
 
           <div className="pt-5">
