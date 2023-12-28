@@ -58,7 +58,7 @@ const HomePage = () => {
               <img
                 src={Image === "/" ? def_img : Image}
                 alt=""
-                className="w-52 h-52"
+                className="w-52 h-52 rounded-xl"
               />
             </div>
           )}
