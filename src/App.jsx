@@ -1,8 +1,9 @@
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <>
-      <div>Hello</div>
+      <HomePage />
     </>
   );
 }
