@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import def_img from "../assets/default_image.svg";
 const key = import.meta.env.VITE_MY_API_KEY;
+import Tilt from "react-parallax-tilt";
 
 const HomePage = () => {
   const [Image, setImage] = useState("/");
@@ -55,11 +56,13 @@ const HomePage = () => {
             </div>
           ) : (
             <div className="py-5">
-              <img
-                src={Image === "/" ? def_img : Image}
-                alt=""
-                className="w-52 h-52 rounded-xl"
-              />
+              <Tilt>
+                <img
+                  src={Image === "/" ? def_img : Image}
+                  alt=""
+                  className="w-52 h-52 rounded-xl"
+                />
+              </Tilt>
             </div>
           )}
 
