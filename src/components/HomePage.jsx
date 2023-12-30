@@ -1,3 +1,5 @@
+// This is HomePage
+// This is importinng section
 import React, { useRef, useState } from "react";
 import def_img from "../assets/default_image.svg";
 const key = import.meta.env.VITE_MY_API_KEY;
@@ -19,7 +21,7 @@ const HomePage = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${key}`,
+          Authorization: `Bearer ${key}`, //${key} add your api key
           "User-Agent": "Brave",
         },
         body: JSON.stringify({
